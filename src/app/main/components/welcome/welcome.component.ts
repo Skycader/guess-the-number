@@ -10,7 +10,7 @@ export class WelcomeComponent {
   public helpMessage = 'начни вводить.';
 
   public randomNumber = 0;
-  public tries = 5;
+  public tries = 10;
 
   public ngOnInit() {
     this.randomize();
