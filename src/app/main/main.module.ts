@@ -5,11 +5,15 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from '../common/components/page-not-found/page-not-found.component';
 import { IsLoggedInGuard } from '../auth/utils/guards/is-logged-in.guard';
+import { FormsModule } from '@angular/forms';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [MainLayoutComponent, WelcomeComponent],
   imports: [
     CommonModule,
+    FormsModule,
+    MaterialModule,
     RouterModule.forChild([
       {
         path: '',
@@ -18,7 +22,6 @@ import { IsLoggedInGuard } from '../auth/utils/guards/is-logged-in.guard';
           {
             path: '',
             component: WelcomeComponent,
-            canActivate: [IsLoggedInGuard],
           },
         ],
       },
@@ -29,4 +32,4 @@ import { IsLoggedInGuard } from '../auth/utils/guards/is-logged-in.guard';
     ]),
   ],
 })
-export class MainModule { }
+export class MainModule {}

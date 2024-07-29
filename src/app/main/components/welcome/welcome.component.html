@@ -4,5 +4,34 @@
     <p class="lead"></p>
     <h1>Welcome to NGRX Template App</h1>
     <h3>Maintained by Areisan</h3>
+    <mat-form-field class="example-full-width">
+      <mat-label>Угадай число!</mat-label>
+      <input matInput [(ngModel)]="guess" />
+    </mat-form-field>
+
+    <h2>Осталось попыток {{ tries }}</h2>
+    <button mat-raised-button (click)="input()">Угадать</button>
+
+    <h1>Сообщение от компьютера: {{ helpMessage }}</h1>
+    <!-- <h2>{{ randomNumber }}</h2> -->
+
+    <div class="cont">
+      <div class="box" [style]="style"></div>
+    </div>
+
+    <br />
+
+    <div class="box-for-slider">
+      <mat-slider
+        class="degree"
+        min="-360"
+        max="360"
+        step="1"
+        showTickMarks
+        discrete
+      >
+        <input matSliderThumb [(ngModel)]="degree" />
+      </mat-slider>
+    </div>
   </div>
 </div>

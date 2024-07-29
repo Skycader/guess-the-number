@@ -9,9 +9,9 @@ export interface AppConfigInterface {
 
 export const AppConfig: AppConfigInterface = {
   appIcon: 'design_services',
-  appName: 'app-name',
+  appName: 'guess-the-number',
   version: '0.0.1',
-  manufacturer: 'project-manufacturer',
+  manufacturer: 'vodri',
   manufacturerIcon: 'near_me',
   year: '2024',
 };

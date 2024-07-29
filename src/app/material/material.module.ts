@@ -26,6 +26,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
+import { MatSliderModule } from '@angular/material/slider';
 import { MatPaginatorModule } from '@angular/material/paginator';
 const MaterialComponents = [
   MatButtonModule,
@@ -52,6 +53,7 @@ const MaterialComponents = [
   MatExpansionModule,
   MatProgressSpinnerModule,
   MatPaginatorModule,
+  MatSliderModule,
 ];
 
 @NgModule({
@@ -59,4 +61,4 @@ const MaterialComponents = [
   imports: [CommonModule, DragDropModule],
   exports: [...MaterialComponents, DragDropModule],
 })
-export class MaterialModule { }
+export class MaterialModule {}
